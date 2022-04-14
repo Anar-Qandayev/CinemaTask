@@ -133,14 +133,14 @@ values(1,1),
 SELECT*FROM FilimActors
 
 
---CREATE PROCEDURE usp_BuyTicket 
---as
---SELECT Films.Name,Films.[Format],Films.ReleaseDate
---FROM Films
---JOIN Tickets
---ON
---Films.Id=Tickets.Id
---exec usp_BuyTicket
+CREATE PROCEDURE usp_BuyTicket 
+as
+SELECT Films.Name,Films.[Format],Films.ReleaseDate
+FROM Films
+JOIN Tickets
+ON
+Films.Id=Tickets.Id
+exec usp_BuyTicket
 
---SELECT*FROM Tickets
+SELECT*FROM Tickets
 
